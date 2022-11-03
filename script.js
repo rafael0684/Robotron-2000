@@ -59,3 +59,7 @@ function atualizaEstatisticas(peca){
     elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
   })
 }
+function mudarCorRobo(alterar){
+  const robo = document.querySelector('.robo');
+  robo.src =`img/robos/${alterar}.png`;
+}
